@@ -4,6 +4,38 @@ Changelog
 Here you can see the full list of changes between each SQLAlchemy-Utils release.
 
 
+0.32.14 (2017-03-27)
+^^^^^^^^^^^^^^^^^^^^
+
+- Fixed drop_database version comparison
+
+
+0.32.13 (2017-03-12)
+^^^^^^^^^^^^^^^^^^^^
+
+- Fixed a DeprecationWarning by using LargeBinary instead of Binary (#263, pull request courtesy of jacquerie)
+
+
+0.32.12 (2016-12-18)
+^^^^^^^^^^^^^^^^^^^^
+
+- Added generic_repr decorator
+
+
+0.32.11 (2016-11-19)
+^^^^^^^^^^^^^^^^^^^^
+
+- TimeZoneType support for static timezones (#244, pull request courtesy of fuhrysteve)
+- Added SQLite support for PasswordType (#254, pull request courtesy of frol)
+
+
+0.32.10 (2016-10-20)
+^^^^^^^^^^^^^^^^^^^^
+
+- Added PhoneNumber as the python_type for PhoneNumberType (#248)
+- Made auto_delete_orphans support backref tuples (#234, pull request courtesy of vToMy)
+
+
 0.32.9 (2016-07-17)
 ^^^^^^^^^^^^^^^^^^^
 
