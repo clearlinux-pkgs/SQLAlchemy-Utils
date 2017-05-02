@@ -4,7 +4,7 @@
 #
 Name     : SQLAlchemy-Utils
 Version  : 0.32.14
-Release  : 21
+Release  : 22
 URL      : https://pypi.debian.net/SQLAlchemy-Utils/SQLAlchemy-Utils-0.32.14.tar.gz
 Source0  : https://pypi.debian.net/SQLAlchemy-Utils/SQLAlchemy-Utils-0.32.14.tar.gz
 Summary  : Various utility functions for SQLAlchemy.
