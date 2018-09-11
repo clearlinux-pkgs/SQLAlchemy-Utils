@@ -4,7 +4,7 @@
 #
 Name     : SQLAlchemy-Utils
 Version  : 0.33.4
-Release  : 24
+Release  : 25
 URL      : https://files.pythonhosted.org/packages/97/49/d720b3201a228e4541ec491e82be5fd58e6d0c2a68ad01906392f6c1b580/SQLAlchemy-Utils-0.33.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/97/49/d720b3201a228e4541ec491e82be5fd58e6d0c2a68ad01906392f6c1b580/SQLAlchemy-Utils-0.33.4.tar.gz
 Summary  : Various utility functions for SQLAlchemy.
@@ -76,7 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1536681602
+export SOURCE_DATE_EPOCH=1536687915
 python3 setup.py build -b py3
 
 %install
