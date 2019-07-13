@@ -4,7 +4,7 @@
 #
 Name     : SQLAlchemy-Utils
 Version  : 0.34.0
-Release  : 35
+Release  : 36
 URL      : https://files.pythonhosted.org/packages/1c/23/5a7c3910476e5ec992c65b0535abb8f6cf42ced304d6972b09fec6036d19/SQLAlchemy-Utils-0.34.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/1c/23/5a7c3910476e5ec992c65b0535abb8f6cf42ced304d6972b09fec6036d19/SQLAlchemy-Utils-0.34.0.tar.gz
 Summary  : Various utility functions for SQLAlchemy.
