@@ -4,7 +4,7 @@
 #
 Name     : SQLAlchemy-Utils
 Version  : 0.34.2
-Release  : 38
+Release  : 40
 URL      : https://files.pythonhosted.org/packages/45/61/3bdd2931e86253fa7df6445a26929fbcc9bc43ad6b27a10f991eb6ecde75/SQLAlchemy-Utils-0.34.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/45/61/3bdd2931e86253fa7df6445a26929fbcc9bc43ad6b27a10f991eb6ecde75/SQLAlchemy-Utils-0.34.2.tar.gz
 Summary  : Various utility functions for SQLAlchemy.
@@ -17,7 +17,6 @@ Requires: Babel
 Requires: SQLAlchemy
 Requires: anyjson
 Requires: cryptography
-Requires: enum34
 Requires: ipaddr
 Requires: passlib
 Requires: six
@@ -26,16 +25,15 @@ BuildRequires : SQLAlchemy
 BuildRequires : anyjson
 BuildRequires : buildreq-distutils3
 BuildRequires : cryptography
-BuildRequires : enum34
 BuildRequires : ipaddr
 BuildRequires : passlib
 BuildRequires : six
 
 %description
 SQLAlchemy-Utils
-================
-|Build Status| |Version Status| |Downloads|
-Various utility functions, new data types and helpers for SQLAlchemy.
+        ----------------
+        
+        Various utility functions and custom data types for SQLAlchemy.
 
 %package license
 Summary: license components for the SQLAlchemy-Utils package.
@@ -72,8 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1566312270
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1570826911
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -89,7 +86,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/SQLAlchemy-Utils
-cp LICENSE %{buildroot}/usr/share/package-licenses/SQLAlchemy-Utils/LICENSE
+cp %{_builddir}/SQLAlchemy-Utils-0.34.2/LICENSE %{buildroot}/usr/share/package-licenses/SQLAlchemy-Utils/03648fd95f199cb384e921cebbdc6b42ef07cb96
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -100,7 +97,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/SQLAlchemy-Utils/LICENSE
+/usr/share/package-licenses/SQLAlchemy-Utils/03648fd95f199cb384e921cebbdc6b42ef07cb96
 
 %files python
 %defattr(-,root,root,-)
