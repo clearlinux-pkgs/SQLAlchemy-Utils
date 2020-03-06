@@ -4,7 +4,7 @@
 #
 Name     : SQLAlchemy-Utils
 Version  : 0.36.1
-Release  : 46
+Release  : 47
 URL      : https://files.pythonhosted.org/packages/85/d8/e889f8071c17773ca0ea3a67a4897ca008e7aff4e5bde0e5b9ef1ee29f1f/SQLAlchemy-Utils-0.36.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/85/d8/e889f8071c17773ca0ea3a67a4897ca008e7aff4e5bde0e5b9ef1ee29f1f/SQLAlchemy-Utils-0.36.1.tar.gz
 Summary  : Various utility functions for SQLAlchemy.
@@ -31,9 +31,9 @@ BuildRequires : six
 
 %description
 SQLAlchemy-Utils
-----------------
-
-Various utility functions and custom data types for SQLAlchemy.
+        ----------------
+        
+        Various utility functions and custom data types for SQLAlchemy.
 
 %package license
 Summary: license components for the SQLAlchemy-Utils package.
@@ -57,7 +57,9 @@ python components for the SQLAlchemy-Utils package.
 Summary: python3 components for the SQLAlchemy-Utils package.
 Group: Default
 Requires: python3-core
-Provides: pypi(SQLAlchemy-Utils)
+Provides: pypi(sqlalchemy_utils)
+Requires: pypi(six)
+Requires: pypi(sqlalchemy)
 
 %description python3
 python3 components for the SQLAlchemy-Utils package.
@@ -72,8 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582917340
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583523552
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
